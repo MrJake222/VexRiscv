@@ -22,12 +22,12 @@ object GenSmallAndProductiveMy extends App{
     mscratchGen    = false,
     mcauseAccess   = CsrAccess.READ_ONLY,
     mbadaddrAccess = CsrAccess.NONE,
-    mcycleAccess   = CsrAccess.READ_ONLY,
-    minstretAccess = CsrAccess.READ_ONLY,
+    mcycleAccess   = CsrAccess.NONE,
+    minstretAccess = CsrAccess.NONE,
     ecallGen       = false,
     wfiGenAsWait         = false,
-    ucycleAccess   = CsrAccess.NONE,
-    uinstretAccess = CsrAccess.NONE
+    ucycleAccess   = CsrAccess.READ_ONLY,
+    uinstretAccess = CsrAccess.READ_ONLY
   )
     
   def cpu() = new VexRiscv(
